@@ -1,4 +1,4 @@
-import abbreviate
+import abbreviator
 
 """
     Deployment Class for UbiOps
@@ -21,5 +21,5 @@ class Deployment:
 
         return {
             "original": data['long'],
-            "short" : abbreviate.sentence_shortener(data['long'], language=lang)
+            "short" : abbreviator.sentence_shortener(data['long'], language=lang)
         }
