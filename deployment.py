@@ -15,6 +15,9 @@ class Deployment:
 
         lang = data.get('language', 'en')
 
+        if not lang in abbreviator.core.pyphen_dict.keys():
+            lang = 'en'
+
         """
             How to check?
         """
